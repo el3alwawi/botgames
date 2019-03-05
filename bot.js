@@ -141,8 +141,6 @@ client.on("message", message => {
 لعبة الصراحة الجميلة باسئلة منوعة
 :game_die: -تحدي
 أنصحك اذا انت مش قد التحدي لاتشارك فيها ابدا ☺
-:game_die: -سامحني
-ياترى بعد التحدي راح يسامحك البوت هههه جرب حظك
 :game_die: -فكك
 كلمات يكتبها البوت وانت تفككها بس انتبه على الحروف جيدا
 :game_die: -اسرع
@@ -323,21 +321,6 @@ const Sra7a = [
         }
        });
 
-// قرعة المسامحة
-const superagent = require("superagent")
-client.on('message' , async (message) => { 
- if (message.content.startsWith('-سامحني')) { 
-let color = '0xffffff' 
-    const { body } = await superagent 
-    .get('https://yesno.wtf/api/'); 
-    if(body.answer === 'Yes') color = '0x01DF01'; 
-    if(body.answer === 'No') color = '0xFF0000'; 
-    const embed = new Discord.RichEmbed()
-    .setColor(color) 
-    .setImage(`${body.image}`)
-    message.channel.send(`**أنت اخترت اختيارك لكن أنا أختار ** **${body.answer}**`, {embed});
-}
-});
 
 // اختر رقم
 client.on('message', function(message) {
