@@ -30,7 +30,21 @@ const sql = require("sqlite");
  const prefix = "-";
 
 client.on('ready', () => {
-  client.user.setGame(`-العاب`,"http://twitch.tv/el3alwawi")
+client.on('ready', function(){
+    var ms = 10000 ;
+    var setGame = [`${client.guilds.size} Server`,'-invite bot | for add this bot in your server',`${client.users.size} Members`,'-مساعدة','By: DEX Gamer | @el3alwawi#5321'];
+    var i = -1;
+    var j = 0;
+    setInterval(function (){
+        if( i == -1 ){
+            j = 1;
+        }
+        if( i == (setGame.length)-1 ){
+            j = -1;
+        }
+        i = i+j;
+        client.user.setGame(setGame[i]);
+    }, ms);
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
   console.log('')
