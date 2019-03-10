@@ -30,8 +30,8 @@ const sql = require("sqlite");
  const prefix = "-";
 
 client.on('ready', function(){
-    var ms = 10000 ;
-    var setGame = [`${client.guilds.size} Server`,'-invite bot | for add this bot in your server',`${client.users.size} Members`,'-العاب','By: DEX Gamer | @el3alwawi#5321'];
+    var ms = 15000 ;
+    var setGame = [`${client.guilds.size} Server`,'-invite bot | for add this bot👾 in your server',`${client.users.size} Members`,'-العاب','By: DEX Gamer | @el3alwawi#5321'];
     var i = -1;
     var j = 0;
     setInterval(function (){
