@@ -100,13 +100,16 @@ client.on('message', function(message) {
         .setThumbnail(`${message.author.avatarURL}`)
         .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
         .setFooter(`From ${message.author.tag} (${message.author.presence.status.toUpperCase()})`)
-    client.channels.get("552229012680998932").send({embed:Dark});
+    client.channels.get("554110845202989076").send({embed:Dark});
     }
 });
 client.on('guildCreate', guild => {
     var embed = new Discord.RichEmbed()
     .setColor(0x5500ff)
-    .setDescription(`**شكراً لك لإضافه البوت الى سيرفرك**`)
+    .setTimestamp()
+    .setTitle('**``شكراً لك لإضافة البوت الى سيرفرك``**')
+    .setThumbnail(`${message.author.avatarURL}`)
+    .setDescription(`**لرؤية قائمة الألعاب الموجودة أكتب : -العاب**`)
         guild.owner.send(embed)
   });
 
@@ -118,7 +121,7 @@ client.on('guildCreate', guild => {
 client.on('message', message => {
   if (true) {
 if (message.content === '-invite bot') {
-      message.author.send('  **هذا هو رابط البوت وتستطيع اضافته الى سيرفرك بنجاع** |	  https://discordapp.com/api/oauth2/authorize?client_id=533328778055647235&permissions=8&scope=bot  ').catch(e => console.log(e.stack));
+      message.author.send('  **هذا هو رابط البوت وتستطيع اضافته الى سيرفرك ب | https://discordapp.com/api/oauth2/authorize?client_id=533328778055647235&permissions=8&scope=bot  ').catch(e => console.log(e.stack));
     }
    }
   }); 
