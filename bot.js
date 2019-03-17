@@ -121,7 +121,7 @@ client.on('guildCreate', guild => {
 client.on('message', message => {
   if (true) {
 if (message.content === '-invite bot') {
-      message.author.send('  **هذا هو رابط البوت وتستطيع اضافته الى سيرفرك ب | https://discordapp.com/api/oauth2/authorize?client_id=533328778055647235&permissions=8&scope=bot  ').catch(e => console.log(e.stack));
+      message.author.send('  **هذا هو رابط البوت وتقدر تضيفو لسيرفرك بنجاح ** | https://discordapp.com/api/oauth2/authorize?client_id=533328778055647235&permissions=8&scope=bot  ').catch(e => console.log(e.stack));
     }
    }
   }); 
