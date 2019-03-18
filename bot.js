@@ -72,18 +72,22 @@ client.on('ready', function(){
 
 // البوت
 client.on('guildCreate', guild => {
-client.channels.get("554110845202989076").send(`✅ **${client.user.tag} دخل سيرفر جديد
+client.channels.get("554110845202989076").send(`═════ஜ۩۞۩ஜ════════════ஜ۩۞۩ஜ═════
+📌 **${client.user.tag} دخل سيرفر جديد
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
-Server Count: __${guild.memberCount}__**`)
+Server Count: __${guild.memberCount}__**
+═════ஜ۩۞۩ஜ════════════ஜ۩۞۩ஜ═════`)
 }); //Codes
 client.on('guildDelete', guild => {
-  client.channels.get("554110845202989076").send(`❎ **${client.user.tag} خرج من سيرفر
+  client.channels.get("554110845202989076").send(`═════ஜ۩۞۩ஜ════════════ஜ۩۞۩ஜ═════
+❌ **${client.user.tag} خرج من سيرفر
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
-Server Count: __${guild.memberCount}__**`)
+Server Count: __${guild.memberCount}__**
+═════ஜ۩۞۩ஜ════════════ஜ۩۞۩ஜ═════`)
 });//Codes
 
 
@@ -150,7 +154,7 @@ client.on('message', function(message) {
         .setThumbnail(`${message.author.avatarURL}`)
         .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
         .setFooter(`From ${message.author.tag} (${message.author.presence.status.toUpperCase()})`)
-    client.channels.get("554110845202989076").send({embed:Dark});
+    client.channels.get("557016378649870346").send({embed:Dark});
     }
 });
 client.on('guildCreate', guild => {
@@ -171,7 +175,7 @@ client.on('guildCreate', guild => {
 client.on('message', message => {
   if (true) {
 if (message.content === '-invite bot') {
-      message.author.send('  **هذا هو رابط البوت وتقدر تضيفو لسيرفرك بنجاح ** | https://discordapp.com/api/oauth2/authorize?client_id=533328778055647235&permissions=8&scope=bot  ').catch(e => console.log(e.stack));
+      message.author.send('  **هذا هو رابط البوت وتقدر تضيفو لسيرفرك بنجاح ** | https://discordapp.com/api/oauth2/authorize?client_id=556972105217081356&permissions=0&scope=bot  ').catch(e => console.log(e.stack));
     }
    }
   }); 
@@ -234,7 +238,7 @@ client.on("message", message => {
 **═════ஜ۩۞۩ஜ════════════ஜ۩۞۩ஜ═════
 `)
 .setTitle('**إضغط هنا لإضافة البوت الى سيرفرك .!**')
-.setURL("https://discordapp.com/api/oauth2/authorize?client_id=533328778055647235&permissions=8&scope=bot");
+.setURL("https://discordapp.com/api/oauth2/authorize?client_id=556972105217081356&permissions=0&scope=bot");
    message.channel.sendEmbed(embed)
     
    }
