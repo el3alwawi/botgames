@@ -1011,4 +1011,4 @@ if(message.content.startsWith("-حظ")) {
 
 
 
-client.login(process.env.BOT_TOKEN);
+client.login('ODUwMDY3NjQyMjgyMDE2NzY4.YLkVLw.zrB8aMBqnRwpXXj6XjbmHKclw44');
