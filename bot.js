@@ -1011,4 +1011,4 @@ if(message.content.startsWith("-حظ")) {
 
 
 
-client.login('ODUwMDY3NjQyMjgyMDE2NzY4.YLkVLw.zrB8aMBqnRwpXXj6XjbmHKclw44');
+client.login('ODYwMjU3NjcyMzkzNTIzMjMw.YN4nYw.r_HzRRtQ-WtmfbbHlGhWd0vYH9E');
